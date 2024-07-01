@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- font-family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Pod request access landing page</title>
+
+  <!-- css file link -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- responsive css file -->
+  <link rel="stylesheet" href="./responsive.css">
+
+</head>
+<body>
+  <!-- container -->
+  <main class="container">
+
+    <!-- pod-logo -->
+    <header class="container__header-logo">
+      <img src="./assets/desktop/logo.svg" alt="pod-logo" class="container__pod-logo">
+    </header>
+
+    <!-- hero-container -->
+    <section class="container__hero">
+      <!-- container-heading -->
+      <div class="container__hero-containt">
+        <h1 class="container__heading">Publish your podcasts <span>everywhere.</span> </h1>
+        <p class="container__text">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+          Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+      </div>
+      <!-- container-form -->
+      <form class="container__hero-form" id="myForm">
+        <div class="container__label">
+          <input type="email" placeholder="Email address" id="email" class="container__input" required>
+          <p class="errorMsg"></p>
+        </div>
+          <button id="btn" class="btn" onclick="validateForm()">Request access</button>
+      </form>
+      <!-- social-media -->
+      <ul class="container__music-app">
+        <li><img src="./assets/desktop/spotify.svg" alt="spotify" class="spotify-logo"></li>
+        <li><img src="./assets/desktop/apple-podcast.svg" alt="apple-podcast" class="apple-podcast-logo"></li>
+        <li><img src="./assets/desktop/google-podcasts.svg" alt="google-podcasts" class="google-podcasts-logo"></li>
+        <li><img src="./assets/desktop/pocket-casts.svg" alt="pocket-casts" class="pocket-casts-logo"></li>
+      </ul>
+    </section>
+
+    <!-- footer-dotted-bg-pattern -->
+    <footer class="container__footer">
+      <img src="./assets/desktop/bg-pattern-dots.svg" alt="dot-pattern" class="container__bg-pattern">
+    </footer>
+  </main>
+  <!-- script file -->
+  <script src="./script.js"></script>
+</body>
+</html>
+

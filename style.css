@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chivo", sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root{
+    --green: #54E6AF;
+    --dark-black: #121725;
+    --white:#FFFFFF;
+    --Dark-grey: #2C344B;
+    --light-grey: #C2CBE5;
+    --light-blue: #5A668A;
+}
+
+body{
+    background-image: url(./assets/desktop/image-host.jpg);
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-color: var(--dark-black);
+    overflow-x: hidden;
+}
+/* main-container */
+.container{
+    margin: auto 165px;
+}
+
+/* logo */
+.container__header-logo .container__pod-logo{
+    margin: 102px auto 0 0;
+}
+
+/* hero-container-section */
+.container__hero{
+    width: 65%;
+    top: 103px;
+    position: relative;
+    background-color: var(--dark-black);
+    display: grid;
+    grid-template-rows: 2fr .7fr 1fr;
+}
+
+/* hero-heading */
+.container__hero-containt .container__heading{
+    padding-top: 88px;
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 62px;
+    color: var(--green);
+    text-transform: uppercase;
+}
+.container__hero-containt .container__heading span{
+    color: var(--white);
+}
+.container__hero-containt .container__text{
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    color: var(--light-grey);
+    width: 63%;
+}
+
+/* container-form */
+.container__hero-form{
+    width: 427px;
+    margin-top: 40px;
+    position: relative;
+}
+.container__hero-form .container__label{
+    display: block;
+}
+.container__hero-form .container__label .container__input{
+    width: 427px;
+    height: 56px;
+    border-radius: 30px;
+    padding: 15px 210px 15px 32px;
+    background-color: var(--Dark-grey);
+    margin-bottom: 0;
+    color: white;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 700;
+}
+.container__hero-form .container__label .errorMsg{
+    position: relative;
+    font-size: 12px;
+    font-weight: 700;
+    top: 5px;
+    left: 20px;
+    color: #FB3E3E;
+}
+.container__hero-form .btn{
+    position: absolute;
+    top: 3px;
+    width: 200px;
+    right: 3px;
+    padding: 10px;
+    background-color: #54E6AF;
+    border-radius: 30px;
+    border: none;
+    line-height: 28px;
+    font-size: 14px;
+    color: var(--dark-black);
+    font-weight: 700;
+    cursor: pointer;
+}
+.container__hero-form .btn:hover{
+    background-color: #B3FFE2;
+}
+
+/* social-media */
+.container__music-app{
+    margin-top: 35px;
+    width: 90%;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container__music-app .spotify-logo{
+    width: 96px;
+    height: 29px;
+}
+.container__music-app .apple-podcast-logo{
+    width: 78px;
+    height: 29px;
+}
+.container__music-app .google-podcasts-logo{
+    width: 125px;
+    height: 18px;
+}
+.container__music-app .pocket-casts-logo{
+    width: 129px;
+    height: 26px;
+}
+
+
+/* footer */
+.container__footer{
+    position: relative;
+    text-align: right;
+    right: -150px;
+    top: -60px;
+}
